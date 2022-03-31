@@ -9,16 +9,16 @@ export const constantRoutes = [
     name: '404',
     component: NotFind
   },
-  ...LoginRouter,
   // {
   //   path: '',
   //   redirect: '/login'
   // },
   {
-    path: '/',
+    path: '',
     name: 'app',
-    redirect: MeetRouter[0].path
+    redirect: '/home'
   },
+  ...LoginRouter,
   ...MeetRouter,
   ...InfoRouter,
   {
